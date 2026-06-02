@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="description" content="Site oficial da campanha dos Jogos do Brasil — combos, reservas, retirada, roleta, bolão e promoções no WhatsApp" />
+  <title>Copa 2026 | Combos, Reservas e Promoções dos Jogos do Brasil</title>
+  <link rel="icon" type="image/png" href="logo.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- =====================================================
+    FACEBOOK PIXEL — cole aqui o código do seu Pixel
+    ======================================================
+    <script>
+      !function(f,b,e,v,n,t,s)...
+      fbq('init', 'SEU_PIXEL_ID');
+      fbq('track', 'PageView');
+    </script>
+    <noscript>...</noscript>
+  ====================================================== -->
+
+  <!-- =====================================================
+    GOOGLE TAG MANAGER (HEAD) — cole aqui
+    ======================================================
+    <script>(function(w,d,s,l,i){...})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+  ====================================================== -->
+</head>
+<body>
+
+  <!-- =====================================================
+    GOOGLE TAG MANAGER (BODY) — cole logo após o <body>
+    ======================================================
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  ====================================================== -->
+
+
+  <!-- ================================================
+    TELA DE INTRODUÇÃO ESTILO NETFLIX (opcional)
+    Controlada por CONFIG.intro.enabled
+  ================================================= -->
+  <div id="intro-screen" class="intro-screen hidden" aria-hidden="true">
+    <div class="intro-overlay"></div>
+    <div class="intro-video-wrap">
+      <!-- vídeo injetado via JS -->
+    </div>
+    <button id="intro-skip" class="intro-skip" type="button">Pular introdução →</button>
+    <div class="intro-progress" aria-hidden="true">
+      <div class="intro-progress-bar" id="intro-progress-bar"></div>
+    </div>
+  </div>
+
+
+  <!-- ================================================
+    HEADER FIXO
+  ================================================= -->
+  <header id="main-header" class="main-header">
+    <div class="header-top">
+      <div class="header-logo" id="header-logo">
+        <!-- Logo ou nome injetado via JS -->
+      </div>
+
+      <a id="header-whatsapp-btn" class="header-cta" href="#" target="_blank" rel="noopener">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+          <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.853L.057 23.57a.75.75 0 0 0 .918.931l5.9-1.547A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.722 9.722 0 0 1-4.978-1.365l-.356-.213-3.699.97.986-3.604-.232-.371A9.721 9.721 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/>
+        </svg>
+        <span>WhatsApp</span>
+      </a>
+    </div>
+
+    <!-- Carrossel jogos do dia -->
+    <div class="jogos-ticker-wrap" aria-label="Jogos do dia">
+      <div class="jogos-ticker" id="jogos-ticker">
+        <!-- injetado via JS -->
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ================================================
+    HERO — Vídeo principal + cards animados
+  ================================================= -->
+  <section class="hero" id="hero">
+
+    <!-- Área do vídeo -->
+    <div class="hero-video-wrap">
+      <div class="hero-video-container" id="hero-video-container">
+        <!-- vídeo injetado via JS -->
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-video-fallback hidden" id="hero-fallback">
+        <div class="fallback-icon">🇧🇷</div>
+        <p>Vídeo não disponível</p>
+      </div>
+    </div>
+
+    <!-- Conteúdo sobre o vídeo -->
+    <div class="hero-content">
+      <!-- Logo da Seleção/campanha (opcional) -->
+      <div class="campaign-logo-wrap" id="campaign-logo-wrap">
+        <!-- injetado via JS se houver logo configurada -->
+      </div>
+
+      <div class="hero-text">
+        <span class="hero-badge">⚽ JOGOS DO BRASIL • PEÇA, RESERVE E TORÇA</span>
+        <h1 class="hero-title" id="hero-title">Prepare sua torcida para os Jogos do Brasil</h1>
+        <p class="hero-sub" id="hero-sub">Combos, delivery, retirada com desconto e promoções especiais para cada jogo.</p>
+
+        <div class="hero-btns" id="hero-btns">
+          <!-- injetado via JS -->
+        </div>
+
+        <!-- Botão externo para cardápio -->
+        <div class="hero-menu-action" id="hero-menu-action">
+          <a id="hero-menu-btn" class="btn-menu" href="#" target="_blank" rel="noopener">
+            🍽️ Ver cardápio
+          </a>
+        </div>
+      </div>
+
+      <!-- Cards animados -->
+      <div class="cards-stage" id="cards-stage" aria-hidden="true">
+        <!-- injetado via JS -->
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ================================================
+    CONTEÚDO PRINCIPAL DA CAMPANHA
+    Novas seções controladas por CONFIG.secoes
+  ================================================= -->
+  <main id="campanha">
+
+    <!-- ================================================
+      ESCOLHA COMO QUER TORCER
+    ================================================= -->
+    <section class="campaign-section how-section" id="como-torcer" data-section="mostrarComoTorcer">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">🇧🇷 Campanha inteligente</span>
+          <h2 id="como-torcer-title">Escolha como quer torcer</h2>
+          <p id="como-torcer-subtitle">
+            Peça em casa, retire com desconto, reserve sua mesa, participe das promoções e viva os Jogos do Brasil do seu jeito.
+          </p>
+        </div>
+
+        <div class="torcer-grid" id="formas-torcer-grid">
+          <!-- cards injetados via JS com suporte a imagem/vídeo -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================================================
+      COMBOS DA COPA
+    ================================================= -->
+    <section class="campaign-section combos-section" id="combos-da-copa" data-section="mostrarCombos">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">🔥 Ofertas para vender mais</span>
+          <h2 id="combos-title">Combos especiais da Copa</h2>
+          <p id="combos-subtitle">
+            Escolha seu combo para assistir ao jogo em casa, retirar no balcão ou dividir com a galera no bar.
+          </p>
+        </div>
+
+        <div class="commercial-grid" id="combos-grid">
+          <!-- combos injetados via JS com suporte a imagem/vídeo -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================================================
+      RETIRE E GANHE
+    ================================================= -->
+    <section class="campaign-section retirada-section" id="retire-e-ganhe" data-section="mostrarRetirada">
+      <div class="container">
+        <div class="feature-band">
+          <div class="feature-band-content">
+            <span class="section-kicker">⚡ Menos espera, mais economia</span>
+            <h2 id="retirada-title">Retire e Ganhe</h2>
+            <p id="retirada-text">
+              Peça pelo WhatsApp, retire no balcão e ganhe desconto especial. Menos espera, mais economia e mais tempo para torcer.
+            </p>
+
+            <div class="feature-actions">
+              <a id="retirada-btn" class="btn-primary" href="#" target="_blank" rel="noopener">
+                Pedir para retirada com desconto
+              </a>
+
+              <a id="retirada-cardapio-btn" class="btn-secondary" href="#" target="_blank" rel="noopener">
+                🍽️ Ver cardápio
+              </a>
+            </div>
+          </div>
+
+          <div class="benefits-grid" id="retirada-benefits">
+            <!-- benefícios injetados via JS com suporte visual -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================================================
+      VAI ASSISTIR NO BAR?
+    ================================================= -->
+    <section class="campaign-section bar-section" id="vai-assistir-no-bar" data-section="mostrarBar">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">🍻 Telão, mesa e torcida</span>
+          <h2 id="bar-title">Vai assistir no bar?</h2>
+          <p id="bar-subtitle">
+            Reserve sua mesa, chame a galera e aproveite promoções especiais durante os jogos do Brasil.
+          </p>
+        </div>
+
+        <div class="bar-content">
+          <div class="bar-benefits" id="bar-benefits">
+            <!-- benefícios/cards injetados via JS com suporte a imagem/vídeo -->
+          </div>
+
+          <div class="bar-actions-card" id="bar-main-card">
+            <!-- card principal do bar injetado via JS com mídia -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================================================
+      RESERVA + BOLÃO EM GRID RESPONSIVO
+      Mantém os IDs originais e as funções existentes.
+    ================================================= -->
+    <div class="reservation-bolao-duo" id="reservation-bolao-duo">
+
+    <!-- ================================================
+      CARD DE RESERVA INTELIGENTE
+      Ao clicar abre modal de reserva
+    ================================================= -->
+    <section class="campaign-section reserva-section" id="reservas" data-section="mostrarReservas">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">📅 Reserva com benefício</span>
+          <h2 id="reserva-title">Reserve sua mesa com desconto</h2>
+          <p id="reserva-subtitle">
+            Clique no card, informe dia, horário e quantidade de pessoas. O desconto será calculado automaticamente.
+          </p>
+        </div>
+
+        <div class="single-feature-card-wrap" id="reservation-card-wrap">
+          <!-- card de reserva injetado via JS com suporte a imagem/vídeo -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================================================
+      BOLÃO PROMOCIONAL
+      Agora é card clicável que abre modal com combos
+    ================================================= -->
+    <section class="campaign-section bolao-section" id="bolao-do-hexa" data-section="mostrarBolao">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">🏆 Promoção sem aposta em dinheiro</span>
+          <h2 id="bolao-title">Bolão do Hexa</h2>
+          <p id="bolao-subtitle">
+            Clique no card, escolha um combo participante e envie seu palpite.
+          </p>
+        </div>
+
+        <div class="single-feature-card-wrap" id="bolao-card-wrap">
+          <!-- card do bolão injetado via JS com suporte a imagem/vídeo -->
+        </div>
+      </div>
+    </section>
+
+    </div>
+
+
+
+
+    <!-- ================================================
+      BOLÃO DA MESA POR COMANDA
+      Bolão presencial para clientes no bar, com validação por comanda.
+    ================================================= -->
+    <section class="campaign-section bolao-mesa-section" id="bolao-da-mesa" data-section="mostrarBolaoMesa">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker" id="bolao-mesa-kicker">🍺 Bolão presencial por comanda</span>
+          <h2 id="bolao-mesa-title">Bolão da Mesa</h2>
+          <p id="bolao-mesa-subtitle">
+            Comprou um combo participante no bar? Preencha seu palpite pelo celular, informe mesa e comanda e acompanhe a torcida. A equipe valida depois pela comanda.
+          </p>
+        </div>
+
+        <div class="bolao-mesa-shell">
+          <div class="single-feature-card-wrap bolao-mesa-card-wrap" id="bolao-mesa-card-wrap">
+            <!-- card do bolão presencial injetado via JS -->
+          </div>
+
+          <div class="bolao-mesa-panel" id="bolao-mesa-panel">
+            <!-- instruções, combo e organização injetadas via JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+      REELS DA CAMPANHA
+    ================================================= -->
+    <section class="campaign-section reels-section" id="reels-da-campanha" data-section="mostrarReels">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">🎬 Conteúdo que vende</span>
+          <h2 id="reels-title">Reels da Campanha</h2>
+          <p id="reels-subtitle">
+            Veja como vídeos curtos podem apresentar ofertas, ambiente, combos e chamadas para WhatsApp de forma mais convincente.
+          </p>
+        </div>
+
+        <div class="reels-grid" id="reels-grid">
+          <!-- reels injetados via JS -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================================================
+      PROMOÇÕES ESPECIAIS
+    ================================================= -->
+    <section class="campaign-section promocoes-section" id="promocoes-especiais" data-section="mostrarPromocoes">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">💛 Ofertas com urgência</span>
+          <h2 id="promocoes-title">Modelos de promoções especiais</h2>
+          <p id="promocoes-subtitle">
+            Ideias de ofertas para incentivar pedidos antes, durante e depois dos jogos, com CTA direto para WhatsApp.
+          </p>
+        </div>
+
+        <div class="commercial-grid" id="promocoes-grid">
+          <!-- promoções injetadas via JS com suporte a imagem/vídeo -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================================================
+      DÚVIDAS E QUEBRA DE OBJEÇÕES
+    ================================================= -->
+    <section class="campaign-section objecoes-section" id="duvidas-e-objecoes" data-section="mostrarDuvidasObjecoes">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker" id="objecoes-kicker">💡 Dúvidas comuns</span>
+          <h2 id="objecoes-title">Antes de pensar “isso não é para mim”...</h2>
+          <p id="objecoes-subtitle">
+            Veja como a campanha foi pensada para facilitar a operação, gerar pedidos e transformar atenção em clientes reais para negócios locais.
+          </p>
+        </div>
+
+        <div class="objecoes-shell">
+          <div class="objecoes-highlight-card" id="objecoes-highlight-card">
+            <!-- destaque injetado via JS -->
+          </div>
+
+          <div class="objecoes-grid" id="objecoes-grid">
+            <!-- perguntas e respostas injetadas via JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================================================
+      POTENCIALIZE SUA CAMPANHA
+      Benefícios inteligentes + bônus de impulsionamento
+    ================================================= -->
+    <section class="campaign-section potencializacao-section" id="potencialize-campanha" data-section="mostrarPotencializacao">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker" id="potencializacao-kicker">⚽ Inteligência comercial</span>
+          <h2 id="potencializacao-title">Muito além de um site bonito</h2>
+          <p id="potencializacao-subtitle">
+            Transforme os jogos do Brasil em pedidos, reservas, clientes organizados e novas oportunidades de venda para o negócio.
+          </p>
+        </div>
+
+        <div class="potencializacao-shell">
+          <div class="potencializacao-media-card" id="potencializacao-media-card">
+            <!-- imagem ou vídeo injetado via JS -->
+          </div>
+
+          <div class="potencializacao-content">
+            <div class="potencializacao-grid" id="potencializacao-benefits">
+              <!-- benefícios injetados via JS -->
+            </div>
+
+            <div class="potencializacao-bonus-card" id="potencializacao-bonus-card">
+              <!-- bônus injetado via JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- ================================================
+      AVALIAÇÕES E CLIENTES
+      Espaço estratégico para prova social da campanha
+    ================================================= -->
+    <section class="campaign-section avaliacoes-section" id="avaliacoes-e-clientes">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">⭐ Prova social da campanha</span>
+          <h2>Coloque aqui suas avaliações e clientes</h2>
+          <p>
+            Use este espaço para mostrar avaliações reais, clientes atendidos, fotos de entregas, prints de feedbacks
+            e comentários de quem já conhece seu atendimento. Isso aumenta a confiança antes do cliente chamar no WhatsApp.
+          </p>
+        </div>
+
+        <div class="avaliacoes-shell">
+          <article class="avaliacao-feature-card">
+            <div class="avaliacao-feature-glow" aria-hidden="true"></div>
+            <span class="avaliacao-feature-icon">💬</span>
+            <h3>Transforme confiança em pedido</h3>
+            <p>
+              Avaliações ajudam o cliente a decidir mais rápido. Mostre comentários, notas, empresas atendidas
+              ou clientes satisfeitos para reforçar que sua campanha é real, organizada e confiável.
+            </p>
+            <a class="btn-primary" href="#cta-final">Quero usar isso na minha campanha</a>
+          </article>
+
+          <div class="avaliacoes-grid">
+            <article class="avaliacao-card">
+              <div class="avaliacao-stars">★★★★★</div>
+              <p>“Coloque aqui o depoimento de um cliente falando sobre atendimento, pedidos, reservas ou experiência no estabelecimento.”</p>
+              <div class="avaliacao-author">
+                <span>👤</span>
+                <div>
+                  <strong>Nome do cliente</strong>
+                  <small>Cliente / empresa atendida</small>
+                </div>
+              </div>
+            </article>
+
+            <article class="avaliacao-card">
+              <div class="avaliacao-stars">★★★★★</div>
+              <p>“Coloque aqui uma avaliação curta sobre a campanha, o ambiente, a comida, o delivery ou a facilidade de chamar no WhatsApp.”</p>
+              <div class="avaliacao-author">
+                <span>🏪</span>
+                <div>
+                  <strong>Nome do estabelecimento</strong>
+                  <small>Bar, restaurante, pizzaria ou delivery</small>
+                </div>
+              </div>
+            </article>
+
+            <article class="avaliacao-card avaliacao-card-highlight">
+              <div class="avaliacao-stars">★★★★★</div>
+              <p>“Use este card para destacar um print de resultado, cliente importante, comentário forte ou prova visual da sua campanha.”</p>
+              <div class="avaliacao-author">
+                <span>🇧🇷</span>
+                <div>
+                  <strong>Avaliação em destaque</strong>
+                  <small>Prova social para gerar confiança</small>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ================================================
+      COMO CHEGAR AO ESTABELECIMENTO
+      Google Maps real incorporado ao site oficial
+    ================================================= -->
+    <section class="campaign-section chegada-section" id="como-chegar">
+      <div class="container">
+        <div class="chegada-card chegada-card-premium chegada-card-maps-real">
+          <div class="chegada-content">
+            <span class="section-kicker" id="localizacao-kicker">📍 Como chegar</span>
+            <h2 id="localizacao-title">Venha torcer com a gente</h2>
+            <p id="localizacao-description">
+              Confira nosso endereço no Google Maps, escolha a melhor rota e venha retirar seu pedido ou assistir aos Jogos do Brasil com conforto.
+            </p>
+
+            <div class="chegada-address-card chegada-address-card-real">
+              <span>Endereço</span>
+              <strong id="localizacao-endereco">Rua Exemplo, 123 — Bairro / Cidade</strong>
+              <small id="localizacao-referencia">Próximo ao ponto de referência principal • Funcionamento especial nos dias de jogo</small>
+            </div>
+
+            <div class="chegada-benefits chegada-benefits-premium">
+              <div class="chegada-benefit chegada-benefit-premium">
+                <span class="chegada-benefit-icon">01</span>
+                <strong>Mapa real dentro do site</strong>
+                <small>Veja o mapa sem sair da página e abra a rota completa quando quiser.</small>
+              </div>
+
+              <div class="chegada-benefit chegada-benefit-premium">
+                <span class="chegada-benefit-icon">02</span>
+                <strong>Rota para retirada e reservas</strong>
+                <small>Ajuda quem vai buscar no balcão, chegar de carro ou assistir ao jogo no estabelecimento.</small>
+              </div>
+
+              <div class="chegada-benefit chegada-benefit-premium">
+                <span class="chegada-benefit-icon">03</span>
+                <strong>Mais facilidade para chegar</strong>
+                <small>Endereço, referência, horário e botão de rota ajudam você a chegar sem dúvida.</small>
+              </div>
+            </div>
+
+            <div class="chegada-actions">
+              <a id="localizacao-maps-btn" class="btn-primary" href="https://maps.google.com/" target="_blank" rel="noopener">
+                Abrir no Google Maps
+              </a>
+              <a id="localizacao-whatsapp-btn" class="btn-secondary" href="#" target="_blank" rel="noopener">
+                Chamar no WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <div class="chegada-visual chegada-visual-premium chegada-visual-google" aria-label="Mapa do estabelecimento">
+            <div class="google-map-card">
+              <div class="google-map-header">
+                <div class="google-map-pin-badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img" aria-label="Pin do Google Maps">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong id="localizacao-map-nome">Nome do Estabelecimento</strong>
+                  <small id="localizacao-map-subtitle">Mapa oficial com pin do Google Maps</small>
+                </div>
+              </div>
+
+              <div class="google-map-embed-wrap">
+                <iframe
+                  id="localizacao-map-iframe"
+                  title="Mapa do estabelecimento no Google Maps"
+                  src="https://www.google.com/maps?q=Rua%20Exemplo%2C%20123&output=embed"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  allowfullscreen>
+                </iframe>
+              </div>
+
+              <div class="google-map-footer">
+                <div>
+                  <span class="status-dot active"></span>
+                  <strong id="localizacao-horario">Funcionamento especial nos dias de jogo</strong>
+                </div>
+                <a id="localizacao-map-footer-link" href="https://maps.google.com/" target="_blank" rel="noopener">
+                  Ver rota completa →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+  EXPERIÊNCIA COMPLETA NOS JOGOS
+================================================= -->
+<section class="campaign-section faturamento-section" id="faturamento-extra">
+  <div class="container">
+    <div class="faturamento-card">
+      <span class="section-kicker">🇧🇷 Torcida, comida e promoção</span>
+
+      <h2>O jogo fica melhor quando pedido, mesa e promoção estão no mesmo lugar.</h2>
+
+      <p>
+        Nos dias de Brasil em campo, você pode escolher como quer torcer: pedir seu combo pelo WhatsApp,
+        retirar no balcão com desconto, reservar uma mesa para assistir com a galera ou participar das ações promocionais da casa.
+      </p>
+
+      <p>
+        Tudo foi organizado para deixar sua experiência mais simples: ofertas claras, botões diretos,
+        Google Maps, roleta promocional, bolão online e Bolão da Mesa para quem estiver no estabelecimento.
+      </p>
+
+      <div class="faturamento-highlight">
+        <strong>A bola vai rolar. Sua torcida já pode se preparar.</strong>
+        <span>Escolha seu combo, chame no WhatsApp e aproveite os Jogos do Brasil com mais praticidade.</span>
+      </div>
+
+      <a href="#combos-da-copa" class="btn-primary">
+        Ver combos e promoções
+      </a>
+    </div>
+  </div>
+</section>
+
+  <!-- ================================================
+  GARANTA ANTES DA BOLA ROLAR
+================================================= -->
+<section class="campaign-section condicao-section" id="condicao-especial">
+  <div class="container">
+    <div class="condicao-card">
+      <div class="condicao-content">
+        <span class="section-kicker">⏳ Antes do jogo começar</span>
+
+        <h2>Garanta seu pedido, sua mesa ou sua retirada antes da bola rolar</h2>
+
+        <p>
+          Em dia de jogo, o movimento aumenta. Antecipe seu pedido, organize sua mesa com a galera
+          ou escolha a retirada no balcão para aproveitar os Jogos do Brasil com mais tranquilidade.
+        </p>
+
+        <p>
+          As promoções da campanha podem variar conforme disponibilidade da casa. Por isso, fale pelo WhatsApp,
+          confira os combos participantes e garanta sua participação nas ações promocionais.
+        </p>
+
+        <div class="condicao-benefits">
+          <div class="condicao-benefit">
+            <span>🍔</span>
+            <strong>Combos especiais para os Jogos do Brasil</strong>
+          </div>
+
+          <div class="condicao-benefit">
+            <span>📲</span>
+            <strong>Pedido e reserva direto no WhatsApp</strong>
+          </div>
+
+          <div class="condicao-benefit">
+            <span>📍</span>
+            <strong>Google Maps para chegar ao estabelecimento</strong>
+          </div>
+
+          <div class="condicao-benefit">
+            <span>🏆</span>
+            <strong>Bolão promocional sem aposta em dinheiro</strong>
+          </div>
+        </div>
+
+        <a
+          class="btn-primary"
+          href="#cta-final"
+        >
+          Quero pedir ou reservar agora
+        </a>
+      </div>
+
+      <div class="condicao-visual" aria-hidden="true">
+        <div class="condicao-ball">⚽</div>
+        <div class="condicao-date">
+          <span>Próximo jogo</span>
+          <strong>13/06</strong>
+          <small>Confira as ofertas antes da bola rolar</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- ================================================
+      CTA FINAL
+    ================================================= -->
+    <section class="campaign-section final-cta-section" id="cta-final">
+      <div class="container">
+        <div class="final-cta-card">
+          <span class="section-kicker">🚀 Chame no WhatsApp</span>
+          <h2 id="final-cta-title">A bola vai rolar. Seu pedido também precisa rolar.</h2>
+          <p id="final-cta-text">
+            Escolha seu combo, reserve sua mesa, retire com desconto, participe das promoções e fale direto pelo WhatsApp antes da partida começar.
+          </p>
+
+          <div class="final-cta-actions" id="final-cta-actions">
+            <a id="final-whatsapp-btn" class="btn-primary" href="#" target="_blank" rel="noopener">
+              Pedir ou reservar no WhatsApp
+            </a>
+            <a id="final-cardapio-btn" class="btn-secondary" href="#" target="_blank" rel="noopener">
+              Ver cardápio
+            </a>
+            <a id="final-promocoes-btn" class="btn-secondary" href="#promocoes-especiais">
+              Ver promoções
+            </a>
+            <a id="final-reserva-btn" class="btn-secondary" href="#reservas">
+              Reservar mesa
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ================================================
+    MODAL DE RESERVA DE MESA
+  ================================================= -->
+  <div id="reservation-modal" class="campaign-modal hidden" aria-hidden="true">
+    <div class="campaign-modal-backdrop" data-close-modal="reservation-modal"></div>
+
+    <div class="campaign-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="reservation-modal-title">
+      <button class="campaign-modal-close" type="button" data-close-modal="reservation-modal" aria-label="Fechar reserva">
+        ×
+      </button>
+
+      <div class="modal-heading">
+        <span class="section-kicker">📅 Reserva inteligente</span>
+        <h2 id="reservation-modal-title">Reserve sua mesa</h2>
+        <p>
+          Preencha os dados abaixo. O desconto será calculado automaticamente pela quantidade de pessoas.
+        </p>
+      </div>
+
+      <form id="reservation-form" class="campaign-form">
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="reserva-nome">Nome</label>
+            <input id="reserva-nome" name="nome" type="text" placeholder="Seu nome" autocomplete="name" required />
+          </div>
+
+          <div class="form-field">
+            <label for="reserva-whatsapp">WhatsApp</label>
+            <input id="reserva-whatsapp" name="whatsapp" type="tel" placeholder="(00) 00000-0000" autocomplete="tel" required />
+          </div>
+
+          <div class="form-field">
+            <label for="reserva-jogo">Dia / jogo</label>
+            <select id="reserva-jogo" name="jogo" required>
+              <option value="">Selecione o jogo</option>
+              <!-- opções injetadas via JS -->
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="reserva-horario">Horário</label>
+            <input id="reserva-horario" name="horario" type="time" required />
+          </div>
+
+          <div class="form-field">
+            <label for="reserva-pessoas">Quantidade de pessoas</label>
+            <input id="reserva-pessoas" name="pessoas" type="number" min="1" max="999" placeholder="Ex: 6" required />
+          </div>
+
+          <div class="form-field form-field-wide">
+            <label for="reserva-observacao">Observação</label>
+            <textarea id="reserva-observacao" name="observacao" rows="3" placeholder="Ex: mesa próxima ao telão, aniversário, grupo grande..."></textarea>
+          </div>
+        </div>
+
+        <div class="discount-result" id="reservation-discount-result">
+          Informe a quantidade de pessoas para calcular o desconto.
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">
+            Reservar pelo WhatsApp
+          </button>
+        </div>
+
+        <p class="form-note">
+          A reserva será enviada para confirmação no WhatsApp e registrada para organização do atendimento.
+        </p>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- ================================================
+    MODAL DO BOLÃO PROMOCIONAL
+    Primeiro mostra combos participantes, depois formulário
+  ================================================= -->
+  <div id="bolao-modal" class="campaign-modal hidden" aria-hidden="true">
+    <div class="campaign-modal-backdrop" data-close-modal="bolao-modal"></div>
+
+    <div class="campaign-modal-dialog campaign-modal-dialog-large" role="dialog" aria-modal="true" aria-labelledby="bolao-modal-title">
+      <button class="campaign-modal-close" type="button" data-close-modal="bolao-modal" aria-label="Fechar bolão">
+        ×
+      </button>
+
+      <div class="modal-heading">
+        <span class="section-kicker">🏆 Bolão promocional</span>
+        <h2 id="bolao-modal-title">Escolha um combo participante</h2>
+        <p>
+          Para participar, escolha um combo participante e envie seu palpite pelo WhatsApp.
+        </p>
+      </div>
+
+      <div id="bolao-combo-step" class="bolao-step">
+        <div class="bolao-combo-grid" id="bolao-combo-grid">
+          <!-- 2 combos participantes injetados via JS -->
+        </div>
+
+        <p class="form-note">
+          Depois de selecionar o combo, o formulário do palpite será liberado.
+        </p>
+      </div>
+
+      <div id="bolao-form-step" class="bolao-step hidden">
+        <div class="selected-combo-box" id="selected-bolao-combo">
+          <!-- combo selecionado aparece aqui -->
+        </div>
+
+        <form id="bolao-form" class="campaign-form">
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="bolao-nome">Nome</label>
+              <input id="bolao-nome" name="nome" type="text" placeholder="Seu nome" autocomplete="name" required />
+            </div>
+
+            <div class="form-field">
+              <label for="bolao-whatsapp">WhatsApp</label>
+              <input id="bolao-whatsapp" name="whatsapp" type="tel" placeholder="(00) 00000-0000" autocomplete="tel" required />
+            </div>
+
+            <div class="form-field">
+              <label for="bolao-jogo">Jogo</label>
+              <select id="bolao-jogo" name="jogo" required>
+                <option value="">Selecione o jogo</option>
+                <!-- opções injetadas via JS -->
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="bolao-palpite">Palpite do placar</label>
+              <input id="bolao-palpite" name="palpite" type="text" placeholder="Ex: Brasil 2 x 0" required />
+            </div>
+
+            <div class="form-field">
+              <label for="bolao-pedido">Você pediu o combo selecionado?</label>
+              <select id="bolao-pedido" name="pedidoRealizado" required>
+                <option value="">Selecione</option>
+                <option value="Sim">Sim</option>
+                <option value="Não">Não</option>
+              </select>
+            </div>
+
+            <div class="form-field form-field-wide">
+              <label for="bolao-observacao">Observação opcional</label>
+              <textarea id="bolao-observacao" name="observacao" rows="3" placeholder="Ex: número do pedido, mesa, combo comprado..."></textarea>
+            </div>
+          </div>
+
+          <div class="rules-card modal-rules">
+            <h3>Regras do bolão</h3>
+            <ul id="bolao-rules">
+              <!-- regras injetadas via JS -->
+            </ul>
+
+            <div class="prize-box">
+              <span>Prêmio principal</span>
+              <strong id="bolao-premio">Combo grátis</strong>
+            </div>
+          </div>
+
+          <div id="bolao-success" class="form-success hidden">
+            Palpite preparado com sucesso!
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn-primary">
+              Enviar meu palpite
+            </button>
+
+            <button type="button" class="btn-secondary" id="bolao-change-combo">
+              Trocar combo
+            </button>
+          </div>
+
+          <p class="form-note">
+            Participação promocional vinculada a pedido ou reserva. Não envolve aposta em dinheiro.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- ================================================
+    MODAL DO BOLÃO DA MESA POR COMANDA
+    Fluxo presencial para registrar palpite por mesa/garçom.
+  ================================================= -->
+  <div id="bolao-mesa-modal" class="campaign-modal hidden" aria-hidden="true">
+    <div class="campaign-modal-backdrop" data-close-modal="bolao-mesa-modal"></div>
+
+    <div class="campaign-modal-dialog campaign-modal-dialog-large" role="dialog" aria-modal="true" aria-labelledby="bolao-mesa-modal-title">
+      <button class="campaign-modal-close" type="button" data-close-modal="bolao-mesa-modal" aria-label="Fechar bolão da mesa">
+        ×
+      </button>
+
+      <div class="modal-heading">
+        <span class="section-kicker">🍺 Bolão da Mesa</span>
+        <h2 id="bolao-mesa-modal-title">Enviar palpite da mesa</h2>
+        <p id="bolao-mesa-modal-description">
+          Comprou um combo participante? Preencha seus dados, informe mesa e comanda, envie seu palpite e aguarde validação do estabelecimento.
+        </p>
+      </div>
+
+      <form id="bolao-mesa-form" class="campaign-form">
+        <div class="bolao-mesa-alert" id="bolao-mesa-info-box">
+          <strong>Regra da demonstração:</strong>
+          <span>preencha com atenção. O palpite entra como pendente e só será validado se o combo participante estiver marcado na comanda da mesa.</span>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="bolao-mesa-nome">Nome do cliente</label>
+            <input id="bolao-mesa-nome" name="nome" type="text" placeholder="Seu nome" autocomplete="name" required />
+          </div>
+
+          <div class="form-field">
+            <label for="bolao-mesa-whatsapp">WhatsApp do cliente</label>
+            <input id="bolao-mesa-whatsapp" name="whatsapp" type="tel" placeholder="(00) 00000-0000" autocomplete="tel" required />
+          </div>
+
+          <div class="form-field">
+            <label for="bolao-mesa-numero">Número da mesa</label>
+            <input id="bolao-mesa-numero" name="numeroMesa" type="text" placeholder="Ex: Mesa 12" required />
+          </div>
+
+          <div class="form-field">
+            <label for="bolao-mesa-comanda">Número da comanda</label>
+            <input id="bolao-mesa-comanda" name="numeroComanda" type="text" placeholder="Ex: 045" required />
+          </div>
+
+          <div class="form-field">
+            <label for="bolao-mesa-garcom">Garçom que avisou <small>(opcional)</small></label>
+            <input id="bolao-mesa-garcom" name="garcom" type="text" placeholder="Ex: João" />
+          </div>
+
+          <div class="form-field">
+            <label for="bolao-mesa-jogo">Jogo</label>
+            <select id="bolao-mesa-jogo" name="jogo" required>
+              <option value="">Selecione o jogo</option>
+              <!-- opções injetadas via JS -->
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="bolao-mesa-combo">Combo comprado</label>
+            <select id="bolao-mesa-combo" name="comboSelecionado" required>
+              <option value="">Selecione o combo</option>
+              <!-- combos injetados via JS -->
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="bolao-mesa-qtd-combos">Quantidade de combos na mesa</label>
+            <input id="bolao-mesa-qtd-combos" name="quantidadeCombos" type="number" min="1" max="2" value="1" required />
+          </div>
+
+          <div class="form-field">
+            <label for="bolao-mesa-palpite">Palpite do placar</label>
+            <input id="bolao-mesa-palpite" name="palpite" type="text" placeholder="Ex: Brasil 2 x 0" required />
+          </div>
+
+          <div class="form-field">
+            <label for="bolao-mesa-consumo">Combo marcado na comanda?</label>
+            <select id="bolao-mesa-consumo" name="comboMarcadoNaComanda" required>
+              <option value="">Selecione</option>
+              <option value="Sim">Sim</option>
+              <option value="Não">Não</option>
+            </select>
+          </div>
+
+          <div class="form-field form-field-wide">
+            <label for="bolao-mesa-observacao">Observação opcional</label>
+            <textarea id="bolao-mesa-observacao" name="observacao" rows="3" placeholder="Ex: cliente comprou Combo 01, comanda 045, mesa próxima ao telão..."></textarea>
+          </div>
+
+          <div class="form-field form-field-wide form-check-field">
+            <label class="form-check-label" for="bolao-mesa-confirmacao">
+              <input id="bolao-mesa-confirmacao" name="confirmacaoComanda" type="checkbox" value="Sim" required />
+              <span>Confirmo que o combo participante foi comprado e está marcado na comanda. Entendo que o palpite só será validado após conferência do estabelecimento.</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="discount-result bolao-mesa-limit-result" id="bolao-mesa-limit-result">
+          Regra: até 2 palpites por mesa, válidos somente até 10 minutos antes do jogo.
+        </div>
+
+        <div class="rules-card modal-rules">
+          <h3>Regras do Bolão da Mesa</h3>
+          <ul id="bolao-mesa-rules">
+            <!-- regras injetadas via JS -->
+          </ul>
+
+          <div class="prize-box">
+            <span>Prêmio da mesa</span>
+            <strong id="bolao-mesa-premio">Combo especial</strong>
+          </div>
+        </div>
+
+        <div id="bolao-mesa-success" class="form-success hidden">
+          Palpite presencial registrado com sucesso!
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">
+            Enviar palpite da mesa
+          </button>
+        </div>
+
+        <p class="form-note">
+          Participação promocional sem aposta em dinheiro. O registro fica pendente até a conferência da comanda pelo estabelecimento.
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <!-- ================================================
+    MODAL DA ROLETA PROMOCIONAL
+    Controlado por CONFIG.roulette
+  ================================================= -->
+  <div id="roulette-modal" class="roulette-modal hidden" aria-hidden="true">
+    <div class="roulette-backdrop" data-close-roulette></div>
+
+    <div class="roulette-dialog" role="dialog" aria-modal="true" aria-labelledby="roulette-title">
+      <button id="roulette-close" class="roulette-close" type="button" aria-label="Fechar roleta">
+        ×
+      </button>
+
+      <div class="roulette-header">
+        <span class="section-kicker">🎁 Promoção surpresa</span>
+        <h2 id="roulette-title">Gire a roleta da campanha</h2>
+        <p id="roulette-description">
+          Gire uma vez e descubra seu benefício especial para os Jogos do Brasil.
+        </p>
+      </div>
+
+      <div class="roulette-wheel-wrap">
+        <div id="roulette-wheel" class="roulette-wheel">
+          <!-- prêmios injetados via JS -->
+        </div>
+        <div class="roulette-pointer" aria-hidden="true">▼</div>
+      </div>
+
+      <div id="roulette-result" class="roulette-result">
+        Clique em girar para revelar seu prêmio.
+      </div>
+
+      <div class="roulette-actions">
+        <button id="roulette-spin" class="btn-primary" type="button">
+          Girar roleta
+        </button>
+
+        <a id="roulette-whatsapp" class="btn-secondary hidden" href="#" target="_blank" rel="noopener">
+          Usar prêmio no WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ================================================
+    RODAPÉ PROFISSIONAL
+  ================================================= -->
+  <footer class="main-footer" id="main-footer">
+    <div class="footer-container">
+
+      <div class="footer-brand">
+        <div class="footer-logo" id="footer-logo"><!-- injetado via JS --></div>
+        <p class="footer-desc" id="footer-desc"></p>
+        <div class="footer-social" id="footer-social">
+          <!-- injetado via JS -->
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Campanha</h4>
+          <ul>
+            <li><a href="#combos-da-copa">Combos</a></li>
+            <li><a href="#retire-e-ganhe">Retirada</a></li>
+            <li><a href="#reservas">Reservas</a></li>
+            <li><a href="#bolao-do-hexa">Bolão</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul>
+            <li><a id="footer-wa-link" href="#">WhatsApp</a></li>
+            <li><a id="footer-ig-link" href="#">Instagram</a></li>
+            <li><a id="footer-tt-link" href="#">TikTok</a></li>
+            <li><a id="footer-yt-link" href="#">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-campaign-logo" id="footer-campaign-logo">
+        <div class="brazil-emblem">🇧🇷</div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p id="footer-copyright"></p>
+    </div>
+  </footer>
+
+
+  <!-- ================================================
+    BOTÃO FLUTUANTE DO WHATSAPP
+  ================================================= -->
+  <a id="whatsapp-fab" class="whatsapp-fab" href="#" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <span class="fab-tooltip" id="fab-tooltip"></span>
+    <svg class="fab-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.853L.057 23.57a.75.75 0 0 0 .918.931l5.9-1.547A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.722 9.722 0 0 1-4.978-1.365l-.356-.213-3.699.97.986-3.604-.232-.371A9.721 9.721 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/>
+    </svg>
+    <span class="fab-pulse"></span>
+  </a>
+
+
+  <!-- Scripts -->
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
