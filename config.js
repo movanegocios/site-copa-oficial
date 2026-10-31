@@ -410,7 +410,7 @@ const CONFIG = {
         texto: "Crie ofertas para grupos consumirem mais durante o jogo.",
         media: {
           type: "image",
-          src: "https://cdnm.westwing.com.br/glossary/uploads/br/2015/09/10145558/Balde-de-cerveja-com-gelo-e-garrafas-de-cerveja-c-a2534.jpg",
+          src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT5LipDFDH7RZex_mbvbJ5RtBwrVXM6Vh3XftVDV7moQ&s=10",
         },
       },
       {
