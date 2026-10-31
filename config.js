@@ -410,7 +410,7 @@ const CONFIG = {
         texto: "Crie ofertas para grupos consumirem mais durante o jogo.",
         media: {
           type: "image",
-          src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT5LipDFDH7RZex_mbvbJ5RtBwrVXM6Vh3XftVDV7moQ&s=10",
+          src: "https://images.pexels.com/photos/4589826/pexels-photo-4589826.jpeg?cs=srgb&dl=pexels-gaurav-gupta-3027732-4589826.jpg&fm=jpg",
         },
       },
       {
